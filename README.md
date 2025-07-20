@@ -1,28 +1,25 @@
 
-=======
-
 # 🔐 ChainSage – AI-Powered Smart Contract Vulnerability Analyzer
 
 **ChainSage** is an advanced AI-based security analyzer that detects, explains, and visualizes vulnerabilities in Ethereum-based Solidity smart contracts. Powered by a fusion of deep learning (CodeBERT, Mistral), anomaly detection (Isolation Forest), and rule-based logic, ChainSage offers a seamless DevSecOps solution through its powerful FastAPI backend and modern Streamlit UI.
-📖 Introduction
-ChainSage is an advanced AI-driven auditing tool designed to analyze and secure Ethereum smart contracts written in Solidity. It seamlessly integrates Machine Learning, Rule-Based Engines, and Visual Analysis to identify, explain, and visualize security vulnerabilities with high accuracy and contextual relevance.
+
+---
+
+## 📖 Introduction
+
+**ChainSage** is an advanced AI-driven auditing tool designed to analyze and secure Ethereum smart contracts written in Solidity. It seamlessly integrates **Machine Learning**, **Rule-Based Engines**, and **Visual Analysis** to identify, explain, and visualize security vulnerabilities with high accuracy and contextual relevance.
 
 This tool is ideal for:
 
->> Blockchain developers
-
->> Web3 auditors
-
->> Security researchers
-
->> Smart contract learners
+- 🛠️ Blockchain developers  
+- 🔐 Web3 auditors  
+- 🧠 Security researchers  
+- 📘 Smart contract learners  
 
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
 ---
 
-
-=======
 ## 🚀 Features
 
 - 🤖 **AI-Powered Detection Engine**
@@ -57,12 +54,12 @@ This tool is ideal for:
 
 ## 🧠 AI & Detection Models Used
 
-| Model               | Role                                                       |
-|--------------------|------------------------------------------------------------|
-| 🧠 **CodeBERT**     | Transformer model fine-tuned to classify Solidity snippets |
-| 🔎 **Mistral-7B**   | Explains detected issues in natural language (via prompting) |
-| 🌲 **Isolation Forest** | Detects outliers in contract structure/statistics      |
-| ⚠️ **Rule Engine**  | Uses RegEx and patterns to detect risky Solidity behaviors |
+| Model                  | Role                                                              |
+|------------------------|-------------------------------------------------------------------|
+| 🧠 **CodeBERT**         | Transformer model fine-tuned to classify Solidity snippets        |
+| 🔎 **Mistral-7B**       | Explains detected issues in natural language (via prompting)      |
+| 🌲 **Isolation Forest** | Detects outliers in contract structure/statistics                 |
+| ⚠️ **Rule Engine**      | Uses RegEx and patterns to detect risky Solidity behaviors        |
 
 ---
 
@@ -81,10 +78,7 @@ graph TD
     D --> H
     F --> H
     H --> I[HTML Vulnerability Report + Diagram]
-```
-
 ---
-
 ## 🛠️ Tech Stack
 
 
@@ -189,7 +183,7 @@ streamlit run app.py
 ## 👨‍💻 Made By
 
 
-=======
+
 **Vaibhav Jha**  
 🔗 [LinkedIn](https://www.linkedin.com/in/vaibhav-jha-27191b1ba/)  
 🧑‍💻 [GitHub](https://github.com/Vaibhav06Jha28)
