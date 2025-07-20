@@ -13,27 +13,27 @@
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
 
 ---
-🚀 Key Features of ChainSage
-🤖 Advanced AI Detection
-Leverages CodeBERT + Mistral to intelligently detect smart contract vulnerabilities with deep context awareness.
+🚀 Features
+🤖 Intelligent Vulnerability Detection
+Leverages CodeBERT and Mistral models for deep semantic analysis of Solidity smart contracts.
 
-🛡️ Smart Rule-Based Triggers
-Flags critical issues like Reentrancy & dangerous .call() usage using custom logic.
+🔍 Hybrid Analysis Engine
+Detects Reentrancy, misuse of .call(), and more using a fusion of AI models and custom rule-based heuristics.
 
-📈 Dynamic Risk Visualization
-Generates interactive Graphviz diagrams to visualize threat flow and impact zones.
+📊 Live Attack Flow Diagrams
+Instantly generates dynamic SVG graphs via Graphviz, visualizing how each vulnerability propagates and impacts your contract.
 
-💻 Modern Dashboard
-Upload .sol files via a sleek Streamlit UI, with HTML-powered vulnerability reports and diagrams.
+🧠 Interactive Streamlit Dashboard
+A sleek, modern UI for uploading .sol files, analyzing them in real-time, and viewing rich, scrollable HTML reports.
 
-🔒 Pro-Grade Security Suggestions
-Built-in hardening tips from OpenZeppelin, ConsenSys, and Slither to fortify your code.
+🛡️ Best-Practice Security Suggestions
+Offers remediation guidance sourced from OpenZeppelin, ConsenSys, and Slither, integrated directly in the output.
 
-⚙️ Dev-Ready CLI & API
-Run audits programmatically via CLI or integrate into pipelines via the FastAPI endpoint.
+💻 Developer-First CLI & API Access
+Seamlessly test and integrate contract scans into your CI/CD pipeline or terminal with FastAPI and CLI tools.
 
-🧪 Demo-Ready Contracts
-Includes sample vulnerable contracts to test detection and demonstrate ChainSage’s capabilities.
+🧪 Built-In Testing Contracts
+Includes real-world vulnerable smart contracts to demo, test, and validate the platform’s detection power..
 
 
 
