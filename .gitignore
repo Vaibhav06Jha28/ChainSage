@@ -1,0 +1,26 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+
+# Model weights and large files
+*.pt
+*.bin
+*.pkl
+
+# VSCode or PyCharm config
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Streamlit & local files
+.streamlit/
+*.sqlite3

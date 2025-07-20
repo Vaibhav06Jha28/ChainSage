@@ -1,0 +1,43 @@
+# Core ML/AI
+torch>=2.0.0
+scikit-learn>=1.4
+transformers>=4.41.0
+sentencepiece>=0.1.99
+numpy>=1.25
+pandas>=2.2
+matplotlib>=3.8
+seaborn>=0.13
+
+# Anomaly Detection / RL / Graph ML
+networkx>=3.3
+xgboost>=2.0.0
+optuna>=3.5.0
+gym==0.26.2
+stable-baselines3>=2.2.1
+
+# Web3 / Blockchain Interaction
+web3>=6.15.1
+eth-account>=0.10.0
+slither-analyzer>=0.10.1  # Optional: For Solidity analysis
+py-solc-x>=1.1.1
+
+# FastAPI Backend
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+python-multipart>=0.0.9
+
+# Streamlit Dashboard
+streamlit>=1.35.0
+plotly>=5.21.0
+
+# Dev Tools
+jupyterlab>=4.1
+ipykernel>=6.29.4
+black
+flake8
+python-dotenv>=1.0.1
+loguru
+tqdm
+requests
+joblib
+shimmy>=2.0

@@ -1,0 +1,6 @@
+code,label
+"function withdraw(uint amount) public { require(balance[msg.sender] >= amount); msg.sender.call{value: amount}(''); balance[msg.sender] -= amount; }",1
+"function safeTransfer(address to, uint amount) public { require(msg.sender == owner); to.call{value: amount}(''); }",0
+"function changeOwner(address newOwner) public { require(msg.sender == owner); owner = newOwner; }",0
+"function donate() public payable { donations[msg.sender] += msg.value; } function withdraw() public { uint amount = donations[msg.sender]; (bool sent, ) = msg.sender.call{value: amount}(''); require(sent, 'Failed'); donations[msg.sender] = 0; }",1
+"function deposit() public payable { balances[msg.sender] += msg.value; }",0
