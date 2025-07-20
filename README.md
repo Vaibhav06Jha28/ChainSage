@@ -23,7 +23,7 @@
 
 | Vulnerability Report | AI-Generated Risk Graph |
 |----------------------|-------------------------|
-| ![Response Screenshot](./assets/Response/response1.png) | ![Response Screenshot](./assets/Response/response2.png) |
+|![Uploaded SOL Screenshot](./assets/UI/UI.png) | ![Response Screenshot](./assets/Response/response2.png) |
 
 ---
 
@@ -45,7 +45,7 @@
 ![Response Screenshot](./assets/Response/response2.png)
 
 ### 📁 Uploaded SOL View
-![Uploaded SOL Screenshot](./assets/Uploaded_SOL/uploaded1.png)
+![Uploaded SOL Screenshot](./assets/UI/UI.png)
 
 
 
