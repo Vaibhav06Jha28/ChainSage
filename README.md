@@ -7,38 +7,45 @@
 
 ---
 
+
+
+🚀 Why ChainSage Stands Out
+
+💡 AI That Knows Solidity Inside-Out
+Trained on thousands of smart contracts, CodeBERT + Mistral detect subtle flaws that static tools miss — even in complex logic flows.
+
+🧠 Hybrid Detection Engine
+Combines deep learning with rule-based logic to catch critical vulnerabilities like reentrancy, unchecked .call(), gas griefing, and more.
+
+🎯 Instant Visual Threat Mapping
+Transforms vulnerabilities into Graphviz-powered SVG diagrams, highlighting affected functions and severity — like X-rays for your code.
+
+📊 Interactive Streamlit Dashboard
+Upload .sol files, click Analyze, and receive a beautiful HTML report, complete with collapsible details, AI explanations, and icons.
+
+🔐 Audit-Ready Insights
+Built-in best practices from OpenZeppelin, Slither, and ConsenSys help you not just detect, but harden your contracts.
+
+⚙️ CLI + API for Pros
+Audit via terminal or plug directly into CI/CD pipelines using the FastAPI backend. Scalable. Scriptable. Production-ready.
+
+🧪 Battle-Tested on Real Vulnerabilities
+Includes a library of vulnerable smart contracts to demo detections and verify model robustness.
+
+🔥 Make Your Contracts Bulletproof
+Whether you're shipping to mainnet or presenting to investors — ChainSage lets you audit, understand, and secure your smart contracts like a pro.
+
+
+
+
+
+---
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-orange)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
 
 ---
-🚀 Features
-🤖 Intelligent Vulnerability Detection
-Leverages CodeBERT and Mistral models for deep semantic analysis of Solidity smart contracts.
-
-🔍 Hybrid Analysis Engine
-Detects Reentrancy, misuse of .call(), and more using a fusion of AI models and custom rule-based heuristics.
-
-📊 Live Attack Flow Diagrams
-Instantly generates dynamic SVG graphs via Graphviz, visualizing how each vulnerability propagates and impacts your contract.
-
-🧠 Interactive Streamlit Dashboard
-A sleek, modern UI for uploading .sol files, analyzing them in real-time, and viewing rich, scrollable HTML reports.
-
-🛡️ Best-Practice Security Suggestions
-Offers remediation guidance sourced from OpenZeppelin, ConsenSys, and Slither, integrated directly in the output.
-
-💻 Developer-First CLI & API Access
-Seamlessly test and integrate contract scans into your CI/CD pipeline or terminal with FastAPI and CLI tools.
-
-🧪 Built-In Testing Contracts
-Includes real-world vulnerable smart contracts to demo, test, and validate the platform’s detection power..
-
-
-
----
-
 ## 🖼 Sample UI
 
 | Vulnerability Report | AI-Generated Risk Graph |
