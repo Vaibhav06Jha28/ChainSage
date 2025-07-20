@@ -4,7 +4,18 @@
 # 🔐 ChainSage – AI-Powered Smart Contract Vulnerability Analyzer
 
 **ChainSage** is an advanced AI-based security analyzer that detects, explains, and visualizes vulnerabilities in Ethereum-based Solidity smart contracts. Powered by a fusion of deep learning (CodeBERT, Mistral), anomaly detection (Isolation Forest), and rule-based logic, ChainSage offers a seamless DevSecOps solution through its powerful FastAPI backend and modern Streamlit UI.
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
+📖 Introduction
+ChainSage is an advanced AI-driven auditing tool designed to analyze and secure Ethereum smart contracts written in Solidity. It seamlessly integrates Machine Learning, Rule-Based Engines, and Visual Analysis to identify, explain, and visualize security vulnerabilities with high accuracy and contextual relevance.
+
+This tool is ideal for:
+
+>> Blockchain developers
+
+>> Web3 auditors
+
+>> Security researchers
+
+>> Smart contract learners
 
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
@@ -71,7 +82,6 @@ graph TD
     F --> H
     H --> I[HTML Vulnerability Report + Diagram]
 ```
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 
 ---
 
@@ -93,7 +103,6 @@ graph TD
 - **ML Models**: CodeBERT, Mistral (via API), Isolation Forest
 
 ---
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 ### 📊 Dashboard View
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
@@ -107,47 +116,35 @@ graph TD
 
 =======
 ---
-## 📁 Directory Structure
+## 📂 Project Structure
 
 ```
 ChainSage/
-├── api/                            # FastAPI backend
+├── api/
 │   └── routes/
-│       └── vulnerability.py
+│       └── vulnerability.py    ← FastAPI route for model-based vulnerability detection
 ├── ai_models/
-│   └── vulnerability_detector.py   # Rule + ML-based inference logic
-├── frontend/
-│   └── streamlit_app/
-│       └── app.py
+│   └── vulnerability_detector.py
 ├── models/
-│   ├── codebert_classifier/        # Fine-tuned CodeBERT model
-│   ├── isolation_forest.pkl
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
+│   └── codebert_classifier/    ← Fine-tuned CodeBERT model
+│   └── isolation_forest.pkl
 │   └── ppo_wallet.zip
 ├── smart_contracts/
 │   └── sample_contracts/
 │       └── vulnerable_contract.sol
-
-=======
-├── assets/
-│   └── Dashboard/
-│   └── Response/
-│   └── UI/
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
+├── frontend/
+│   └── streamlit_app/
+│       └── app.py              ← Streamlit frontend UI
+├── test_contract.sol
 ├── mistral_vulnerability_checker.py
 ├── generate_dataset.py
 ├── evaluate_model.py
 ├── train_codebert_classifier.py
 ├── cli_infer.py
 ├── .env
-
-=======
-├── .gitignore
-└── README.md
+├── requirements.txt
+└── README.md                  ← You're here!
 ```
-
----
-
 ## ▶️ Getting Started
 
 ```bash
@@ -167,7 +164,7 @@ cd api
 uvicorn main:app --reload
 
 # Launch Streamlit frontend
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
+
 cd ../frontend/streamlit_app
 streamlit run app.py
 ```
@@ -185,7 +182,7 @@ streamlit run app.py
 - **Severity**: 🔴 High
 - **Explanation**: External call before state update
 - **Fix**: Apply Checks-Effects-Interactions pattern or use `ReentrancyGuard`
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
+
 
 ---
 
@@ -204,4 +201,4 @@ streamlit run app.py
 MIT License © 2025 Vaibhav Jha
 
 ---
->>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
+
