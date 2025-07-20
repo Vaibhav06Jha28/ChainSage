@@ -7,15 +7,35 @@
 
 ---
 
-## 🚀 Features
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
+![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-orange)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
 
-- 🤖 **AI-Based Detection**: Uses CodeBERT + Mistral models for contextual vulnerability classification.
-- 🔍 **Rule-Based Enhancements**: Includes Reentrancy and `.call()` detection via custom patterns.
-- 📊 **Graphviz Risk Diagrams**: Auto-generates dynamic SVG diagrams highlighting vulnerability impact.
-- 🧠 **Streamlit Dashboard**: Upload and analyze `.sol` contracts with rich HTML report rendering.
-- 🔐 **Secure Recommendations**: Built-in best-practice guidance from OpenZeppelin, ConsenSys, and Slither.
-- 📁 **CLI and API Ready**: Run vulnerability checks directly via terminal or integrate into apps.
-- 🧪 **Sample Contracts**: Comes with vulnerable Solidity contracts for testing and demoing.
+---
+🚀 Key Features of ChainSage
+🤖 Advanced AI Detection
+Leverages CodeBERT + Mistral to intelligently detect smart contract vulnerabilities with deep context awareness.
+
+🛡️ Smart Rule-Based Triggers
+Flags critical issues like Reentrancy & dangerous .call() usage using custom logic.
+
+📈 Dynamic Risk Visualization
+Generates interactive Graphviz diagrams to visualize threat flow and impact zones.
+
+💻 Modern Dashboard
+Upload .sol files via a sleek Streamlit UI, with HTML-powered vulnerability reports and diagrams.
+
+🔒 Pro-Grade Security Suggestions
+Built-in hardening tips from OpenZeppelin, ConsenSys, and Slither to fortify your code.
+
+⚙️ Dev-Ready CLI & API
+Run audits programmatically via CLI or integrate into pipelines via the FastAPI endpoint.
+
+🧪 Demo-Ready Contracts
+Includes sample vulnerable contracts to test detection and demonstrate ChainSage’s capabilities.
+
+
 
 ---
 
