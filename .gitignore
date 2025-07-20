@@ -24,3 +24,28 @@ venv/
 # Streamlit & local files
 .streamlit/
 *.sqlite3
+# Ignore model checkpoints
+models/codebert_classifier/checkpoint-*/model.safetensors
+models/codebert_classifier/pytorch_model.bin
+models/ppo_wallet.zip
+
+# Ignore venv
+venv/
+*.pt
+*.zip
+*.ckpt
+*.tfevents.*
+# Ignore large model files
+*.safetensors
+*.pt
+*.bin
+*.zip
+*.tfevents.*
+
+# Checkpoint folders
+models/codebert_classifier/checkpoint-*/
+
+# Python + venv
+__pycache__/
+*.pyc
+venv/
