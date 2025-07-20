@@ -36,6 +36,20 @@
 
 ---
 
+
+### 📊 Dashboard View
+![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
+
+### 📩 Response Example
+![Response Screenshot](./assets/Response/response1.png)
+![Response Screenshot](./assets/Response/response12.png)
+
+### 📁 Uploaded SOL View
+![Uploaded SOL Screenshot](./assets/Uploaded_SOL/uploaded1.png)
+
+
+
+---
 ## 📂 Project Structure
 
 ```
