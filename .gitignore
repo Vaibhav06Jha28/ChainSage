@@ -49,3 +49,6 @@ models/codebert_classifier/checkpoint-*/
 __pycache__/
 *.pyc
 venv/
+"models/codebert_classifier/*.safetensors" 
+"models/codebert_classifier/*.bin" 
+"models/*.zip" 
