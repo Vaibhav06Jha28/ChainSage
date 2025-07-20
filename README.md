@@ -9,31 +9,48 @@
 
 
 
-🚀 Why ChainSage Stands Out
+🚀 Features
+🤖 AI-Powered Detection Engine
 
-💡 AI That Knows Solidity Inside-Out
-Trained on thousands of smart contracts, CodeBERT + Mistral detect subtle flaws that static tools miss — even in complex logic flows.
+Leverages CodeBERT + Mistral to understand Solidity code contextually
 
-🧠 Hybrid Detection Engine
-Combines deep learning with rule-based logic to catch critical vulnerabilities like reentrancy, unchecked .call(), gas griefing, and more.
+Detects deep, logic-based flaws that static tools often miss
 
-🎯 Instant Visual Threat Mapping
-Transforms vulnerabilities into Graphviz-powered SVG diagrams, highlighting affected functions and severity — like X-rays for your code.
+🔍 Hybrid Rule-Based Enhancements
 
-📊 Interactive Streamlit Dashboard
-Upload .sol files, click Analyze, and receive a beautiful HTML report, complete with collapsible details, AI explanations, and icons.
+Identifies critical vulnerabilities like reentrancy, .call() misuse, unchecked external calls
 
-🔐 Audit-Ready Insights
-Built-in best practices from OpenZeppelin, Slither, and ConsenSys help you not just detect, but harden your contracts.
+Uses custom detection logic alongside ML
 
-⚙️ CLI + API for Pros
-Audit via terminal or plug directly into CI/CD pipelines using the FastAPI backend. Scalable. Scriptable. Production-ready.
+📊 Dynamic Risk Diagrams with Graphviz
 
-🧪 Battle-Tested on Real Vulnerabilities
-Includes a library of vulnerable smart contracts to demo detections and verify model robustness.
+Automatically generates visual threat maps from contract logic
 
-🔥 Make Your Contracts Bulletproof
-Whether you're shipping to mainnet or presenting to investors — ChainSage lets you audit, understand, and secure your smart contracts like a pro.
+Highlights risk flow using SVG-based diagrams
+
+🧠 Interactive Streamlit Dashboard
+
+Upload .sol smart contracts and instantly view detailed vulnerability reports
+
+Clean UI with collapsible sections, icons, and rich HTML formatting
+
+🔐 Secure Coding Recommendations
+
+Built-in best practices from OpenZeppelin, ConsenSys, and Slither
+
+Explains why a vulnerability is dangerous and how to fix it
+
+⚙️ CLI + API Integration
+
+Run audits via command line or integrate into CI/CD pipelines
+
+FastAPI backend supports JSON-based analysis requests
+
+🧪 Curated Vulnerable Contracts for Testing
+
+Comes bundled with real-world vulnerable .sol contracts
+
+Perfect for demos, benchmarking, or model evaluation
 
 
 
