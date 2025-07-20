@@ -1,4 +1,3 @@
-
 # 🔐 ChainSage – AI-Powered Smart Contract Vulnerability Analyzer
 
 **ChainSage** is an advanced AI-based security analyzer that detects, explains, and visualizes vulnerabilities in Ethereum-based Solidity smart contracts. Powered by a fusion of deep learning (CodeBERT, Mistral), anomaly detection (Isolation Forest), and rule-based logic, ChainSage offers a seamless DevSecOps solution through its powerful FastAPI backend and modern Streamlit UI.
@@ -7,14 +6,13 @@
 
 ## 📖 Introduction
 
-**ChainSage** is an advanced AI-driven auditing tool designed to analyze and secure Ethereum smart contracts written in Solidity. It seamlessly integrates **Machine Learning**, **Rule-Based Engines**, and **Visual Analysis** to identify, explain, and visualize security vulnerabilities with high accuracy and contextual relevance.
+ChainSage is an advanced AI-driven auditing tool designed to analyze and secure Ethereum smart contracts written in Solidity. It seamlessly integrates Machine Learning, Rule-Based Engines, and Visual Analysis to identify, explain, and visualize security vulnerabilities with high accuracy and contextual relevance.
 
 This tool is ideal for:
-
-- 🛠️ Blockchain developers  
-- 🔐 Web3 auditors  
-- 🧠 Security researchers  
-- 📘 Smart contract learners  
+- 🔗 Blockchain developers
+- 🔍 Web3 auditors
+- 🔬 Security researchers
+- 📚 Smart contract learners
 
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
@@ -54,12 +52,12 @@ This tool is ideal for:
 
 ## 🧠 AI & Detection Models Used
 
-| Model                  | Role                                                              |
-|------------------------|-------------------------------------------------------------------|
-| 🧠 **CodeBERT**         | Transformer model fine-tuned to classify Solidity snippets        |
-| 🔎 **Mistral-7B**       | Explains detected issues in natural language (via prompting)      |
-| 🌲 **Isolation Forest** | Detects outliers in contract structure/statistics                 |
-| ⚠️ **Rule Engine**      | Uses RegEx and patterns to detect risky Solidity behaviors        |
+| Model               | Role                                                       |
+|--------------------|------------------------------------------------------------|
+| 🧠 **CodeBERT**     | Transformer model fine-tuned to classify Solidity snippets |
+| 🔎 **Mistral-7B**   | Explains detected issues in natural language (via prompting) |
+| 🌲 **Isolation Forest** | Detects outliers in contract structure/statistics      |
+| ⚠️ **Rule Engine**  | Uses RegEx and patterns to detect risky Solidity behaviors |
 
 ---
 
@@ -78,12 +76,12 @@ graph TD
     D --> H
     F --> H
     H --> I[HTML Vulnerability Report + Diagram]
+```
 
 ---
+
 ## 🛠️ Tech Stack
 
-
-=======
 ![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
 ![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-orange)
@@ -93,11 +91,12 @@ graph TD
 ![HuggingFace](https://img.shields.io/badge/Transformers-HuggingFace-yellow)
 
 **Components:**
-- **Frontend**: Streamlit + Lottie + Custom HTML/CSS
-- **Backend**: FastAPI + PyTorch + Transformers + Graphviz
-- **ML Models**: CodeBERT, Mistral (via API), Isolation Forest
+- 🖥 **Frontend**: Streamlit + Lottie + Custom HTML/CSS
+- ⚙️ **Backend**: FastAPI + PyTorch + Transformers + Graphviz
+- 📦 **ML Models**: CodeBERT, Mistral (via API), Isolation Forest
 
 ---
+
 ### 📊 Dashboard View
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
@@ -108,20 +107,19 @@ graph TD
 ### 🖼️ UI Screenshot
 ![UI Screenshot](./assets/UI/UI.png)
 
-
-=======
 ---
+
 ## 📂 Project Structure
 
 ```
 ChainSage/
 ├── api/
 │   └── routes/
-│       └── vulnerability.py    ← FastAPI route for model-based vulnerability detection
+│       └── vulnerability.py
 ├── ai_models/
 │   └── vulnerability_detector.py
 ├── models/
-│   └── codebert_classifier/    ← Fine-tuned CodeBERT model
+│   └── codebert_classifier/
 │   └── isolation_forest.pkl
 │   └── ppo_wallet.zip
 ├── smart_contracts/
@@ -129,7 +127,7 @@ ChainSage/
 │       └── vulnerable_contract.sol
 ├── frontend/
 │   └── streamlit_app/
-│       └── app.py              ← Streamlit frontend UI
+│       └── app.py
 ├── test_contract.sol
 ├── mistral_vulnerability_checker.py
 ├── generate_dataset.py
@@ -138,39 +136,26 @@ ChainSage/
 ├── cli_infer.py
 ├── .env
 ├── requirements.txt
-└── README.md                  ← You're here!
+└── README.md
 ```
-## ▶️ Getting Started
-
-```bash
-# Clone the repository
-git clone https://github.com/Vaibhav06Jha28/ChainSage.git
-cd ChainSage
-
-# Setup Python virtual environment
-python -m venv venv
-venv\Scripts\activate  # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start backend API
-cd api
-uvicorn main:app --reload
-
-# Launch Streamlit frontend
-
-cd ../frontend/streamlit_app
-streamlit run app.py
-```
-
-
-=======
-> ⚠️ **Important**: Install Graphviz and ensure `dot` is available in system PATH.
 
 ---
 
-## 📉 Sample Report Output
+## ▶️ Getting Started
+
+```bash
+git clone https://github.com/Vaibhav06Jha28/ChainSage.git
+cd ChainSage
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+cd api && uvicorn main:app --reload
+cd ../frontend/streamlit_app && streamlit run app.py
+```
+
+---
+
+## 📉 Sample Output
 
 - **Type**: Reentrancy Attack
 - **Detected By**: CodeBERT + Rule Engine
@@ -178,12 +163,9 @@ streamlit run app.py
 - **Explanation**: External call before state update
 - **Fix**: Apply Checks-Effects-Interactions pattern or use `ReentrancyGuard`
 
-
 ---
 
 ## 👨‍💻 Made By
-
-
 
 **Vaibhav Jha**  
 🔗 [LinkedIn](https://www.linkedin.com/in/vaibhav-jha-27191b1ba/)  
@@ -194,6 +176,3 @@ streamlit run app.py
 ## 📜 License
 
 MIT License © 2025 Vaibhav Jha
-
----
-
