@@ -3,7 +3,7 @@
 **ChainSage** is a cutting-edge AI-driven security toolkit that detects and explains vulnerabilities in Ethereum-based Solidity smart contracts. It leverages CodeBERT, Mistral, Isolation Forest, and custom rule-based detection, and presents results via a modern FastAPI backend and a Streamlit frontend dashboard – complete with live diagram generation using Graphviz.
 
 
-![Dashboard](assets/Dashboard/dashboard_preview.png)
+![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
 ---
 
@@ -23,7 +23,7 @@
 
 | Vulnerability Report | AI-Generated Risk Graph |
 |----------------------|-------------------------|
-| ![Response](assets/Response/response_ui.png) | ![Graph](assets/Dashboard/graphviz_diagram.png) |
+| ![Response Screenshot](./assets/Response/response1.png) | ![Response Screenshot](./assets/Response/response2.png) |
 
 ---
 
