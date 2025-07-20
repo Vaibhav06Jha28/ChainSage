@@ -1,86 +1,99 @@
+
+=======
+
 # 🔐 ChainSage – AI-Powered Smart Contract Vulnerability Analyzer
 
-**ChainSage** is a cutting-edge AI-driven security toolkit that detects and explains vulnerabilities in Ethereum-based Solidity smart contracts. It leverages CodeBERT, Mistral, Isolation Forest, and custom rule-based detection, and presents results via a modern FastAPI backend and a Streamlit frontend dashboard – complete with live diagram generation using Graphviz.
-
+**ChainSage** is an advanced AI-based security analyzer that detects, explains, and visualizes vulnerabilities in Ethereum-based Solidity smart contracts. Powered by a fusion of deep learning (CodeBERT, Mistral), anomaly detection (Isolation Forest), and rule-based logic, ChainSage offers a seamless DevSecOps solution through its powerful FastAPI backend and modern Streamlit UI.
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
 ---
 
 
+=======
+## 🚀 Features
 
-🚀 Features
-🤖 AI-Powered Detection Engine
+- 🤖 **AI-Powered Detection Engine**
+  - Uses **CodeBERT** (fine-tuned on Solidity contracts) and **Mistral** for advanced contextual analysis
+  - Identifies logical vulnerabilities like `Reentrancy`, `tx.origin misuse`, and more
 
-Leverages CodeBERT + Mistral to understand Solidity code contextually
+- 🔍 **Hybrid Rule-Based Enhancements**
+  - Custom detection for `.call()`, `unchecked-send`, and unprotected ownership transfer
+  - Works alongside the ML models to increase reliability and precision
 
-Detects deep, logic-based flaws that static tools often miss
+- 📊 **Dynamic Risk Diagrams with Graphviz**
+  - Converts control flow into **visual threat maps**
+  - Clearly highlights critical paths and exploitable entry points
 
-🔍 Hybrid Rule-Based Enhancements
+- 🧠 **Streamlit-Powered Dashboard**
+  - Upload Solidity `.sol` contracts for instant analysis
+  - Displays AI-generated HTML reports and SVG graphs
 
-Identifies critical vulnerabilities like reentrancy, .call() misuse, unchecked external calls
+- 🔐 **Secure Coding Recommendations**
+  - Suggestions inspired by **OpenZeppelin**, **ConsenSys**, and **Slither** audits
+  - Actionable prevention tips integrated into every finding
 
-Uses custom detection logic alongside ML
+- ⚙️ **FastAPI & CLI Integration**
+  - RESTful API for remote ML inference and contract analysis
+  - Run directly via command-line or hook into CI/CD pipelines
 
-📊 Dynamic Risk Diagrams with Graphviz
-
-Automatically generates visual threat maps from contract logic
-
-Highlights risk flow using SVG-based diagrams
-
-🧠 Interactive Streamlit Dashboard
-
-Upload .sol smart contracts and instantly view detailed vulnerability reports
-
-Clean UI with collapsible sections, icons, and rich HTML formatting
-
-🔐 Secure Coding Recommendations
-
-Built-in best practices from OpenZeppelin, ConsenSys, and Slither
-
-Explains why a vulnerability is dangerous and how to fix it
-
-⚙️ CLI + API Integration
-
-Run audits via command line or integrate into CI/CD pipelines
-
-FastAPI backend supports JSON-based analysis requests
-
-🧪 Curated Vulnerable Contracts for Testing
-
-Comes bundled with real-world vulnerable .sol contracts
-
-Perfect for demos, benchmarking, or model evaluation
-
-
-
-
+- 🧪 **Included Vulnerable Contracts**
+  - Sample `.sol` contracts with known issues for testing and demoing
+  - Great for education, debugging, and benchmarking
 
 ---
-![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
-![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-orange)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
+
+## 🧠 AI & Detection Models Used
+
+| Model               | Role                                                       |
+|--------------------|------------------------------------------------------------|
+| 🧠 **CodeBERT**     | Transformer model fine-tuned to classify Solidity snippets |
+| 🔎 **Mistral-7B**   | Explains detected issues in natural language (via prompting) |
+| 🌲 **Isolation Forest** | Detects outliers in contract structure/statistics      |
+| ⚠️ **Rule Engine**  | Uses RegEx and patterns to detect risky Solidity behaviors |
 
 ---
-## 🖼 Sample UI
 
-| Vulnerability Report | AI-Generated Risk Graph |
-|----------------------|-------------------------|
-|![Response Screenshot](./assets/Response/response1.png)  | ![Response Screenshot](./assets/Response/response2.png) |
+## 🧱 Architecture & Workflow
+
+```mermaid
+graph TD
+    A[User Uploads .sol File] --> B[Streamlit UI]
+    B --> C[FastAPI Backend]
+    C --> D[CodeBERT Classifier]
+    C --> E[Mistral Explainer]
+    C --> F[Rule-Based Analyzer]
+    C --> G[Graphviz SVG Generator]
+    G --> H[Visual Report]
+    E --> H
+    D --> H
+    F --> H
+    H --> I[HTML Vulnerability Report + Diagram]
+```
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Streamlit + HTML components + Lottie animations
-- **Backend**: FastAPI + PyTorch + HuggingFace Transformers
-- **Model**: CodeBERT fine-tuned on Solidity contracts
-- **Visualization**: Graphviz (risk graph), Markdown (explanations)
+
+=======
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
+![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-orange)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
+![Graphviz](https://img.shields.io/badge/Visualization-Graphviz-blue)
+![PyTorch](https://img.shields.io/badge/ML-PyTorch-red)
+![HuggingFace](https://img.shields.io/badge/Transformers-HuggingFace-yellow)
+
+**Components:**
+- **Frontend**: Streamlit + Lottie + Custom HTML/CSS
+- **Backend**: FastAPI + PyTorch + Transformers + Graphviz
+- **ML Models**: CodeBERT, Mistral (via API), Isolation Forest
 
 ---
-
-
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 ### 📊 Dashboard View
 ![Dashboard Screenshot](./assets/Dashboard/dashboard1.png)
 
@@ -92,90 +105,103 @@ Perfect for demos, benchmarking, or model evaluation
 ![UI Screenshot](./assets/UI/UI.png)
 
 
-
+=======
 ---
-## 📂 Project Structure
+## 📁 Directory Structure
 
 ```
 ChainSage/
-├── api/
+├── api/                            # FastAPI backend
 │   └── routes/
-│       └── vulnerability.py    ← FastAPI route for model-based vulnerability detection
+│       └── vulnerability.py
 ├── ai_models/
-│   └── vulnerability_detector.py
+│   └── vulnerability_detector.py   # Rule + ML-based inference logic
+├── frontend/
+│   └── streamlit_app/
+│       └── app.py
 ├── models/
-│   └── codebert_classifier/    ← Fine-tuned CodeBERT model
-│   └── isolation_forest.pkl
+│   ├── codebert_classifier/        # Fine-tuned CodeBERT model
+│   ├── isolation_forest.pkl
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 │   └── ppo_wallet.zip
 ├── smart_contracts/
 │   └── sample_contracts/
 │       └── vulnerable_contract.sol
-├── frontend/
-│   └── streamlit_app/
-│       └── app.py              ← Streamlit frontend UI
-├── test_contract.sol
+
+=======
+├── assets/
+│   └── Dashboard/
+│   └── Response/
+│   └── UI/
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 ├── mistral_vulnerability_checker.py
 ├── generate_dataset.py
 ├── evaluate_model.py
 ├── train_codebert_classifier.py
 ├── cli_infer.py
 ├── .env
-├── requirements.txt
-└── README.md                  ← You're here!
+
+=======
+├── .gitignore
+└── README.md
 ```
 
+---
 
-
-
-## ▶️ How to Run
+## ▶️ Getting Started
 
 ```bash
-# 1. Clone the repo
+# Clone the repository
 git clone https://github.com/Vaibhav06Jha28/ChainSage.git
 cd ChainSage
 
-# 2. Create virtual environment
+# Setup Python virtual environment
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate  # Windows
 
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Start backend (FastAPI)
+# Start backend API
 cd api
 uvicorn main:app --reload
 
-# 5. Start frontend (Streamlit)
+# Launch Streamlit frontend
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 cd ../frontend/streamlit_app
 streamlit run app.py
 ```
 
----
 
-## ⚠️ Notes
-- Ensure **Graphviz is installed** and `dot` is available in PATH.
-- Backend runs at `http://localhost:8000/vulnerability/analyze`
-- Make sure both Streamlit and FastAPI servers are running.
+=======
+> ⚠️ **Important**: Install Graphviz and ensure `dot` is available in system PATH.
 
 ---
 
-## 📉 Example Output
+## 📉 Sample Report Output
 
-- Vulnerability Type: Reentrancy
-- Risk Level: High
-- Reason: External call before internal state update
-- Recommendation: Use Checks-Effects-Interactions / ReentrancyGuard
-- Dynamic Diagram: ✅ Auto-generated via Graphviz
-
----
-## 📜 License
-
-MIT License © 2025 Vaibhav Jha
+- **Type**: Reentrancy Attack
+- **Detected By**: CodeBERT + Rule Engine
+- **Severity**: 🔴 High
+- **Explanation**: External call before state update
+- **Fix**: Apply Checks-Effects-Interactions pattern or use `ReentrancyGuard`
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
 
 ---
 
 ## 👨‍💻 Made By
 
-- **Vaibhav Jha**  
-  🔗 [LinkedIn](https://www.linkedin.com/in/vaibhav-jha-27191b1ba/)  
-  🧑‍💻 [GitHub](https://github.com/Vaibhav06Jha28)
+
+=======
+**Vaibhav Jha**  
+🔗 [LinkedIn](https://www.linkedin.com/in/vaibhav-jha-27191b1ba/)  
+🧑‍💻 [GitHub](https://github.com/Vaibhav06Jha28)
+
+---
+
+## 📜 License
+
+MIT License © 2025 Vaibhav Jha
+
+---
+>>>>>>> cc0743a (📝 Restored and updated professional README with full architecture, tech stack, features)
